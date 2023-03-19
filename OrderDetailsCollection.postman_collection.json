@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "5d69c9f8-6561-454a-9da4-651e04ffee0d",
+		"name": "OrderDetailsCollection",
+		"description": "OrderDetailsCollection apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4002/getOrderDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"tata nano\",\r\n    \"color\":\"red\",\r\n    \"manufacturer\":\"tata\",\r\n    \"price\":\"100000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4003/addCarDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4003",
+					"path": [
+						"addCarDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/addOrderDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"item\": \"KFC veg burger\",\r\n        \"price\": 299,\r\n        \"restaurant\":\"KFC4\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4002/addOrderDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"addOrderDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/updateOrderDetails",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"_id\": \"6417326d409f7d2f76863ec0\",\r\n        \"item\": \"KFC veg burger\",\r\n        \"price\": 250,\r\n        \"restaurant\": \"KFC4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4002/updateOrderDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"updateOrderDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/deleteOrderDetails",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"_id\": \"6417326d409f7d2f76863ec0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4002/deleteOrderDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"deleteOrderDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
