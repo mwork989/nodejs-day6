@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-day6",
+  "version": "1.0.0",
+  "description": "nodejs-day6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server",
+    "start2": "nodemon server-routing",
+    "start3": "nodemon template-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwork989/nodejs-day6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwork989/nodejs-day6/issues"
+  },
+  "homepage": "https://github.com/mwork989/nodejs-day6#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.3",
+    "nodemon": "^2.0.21"
+  }
+}
